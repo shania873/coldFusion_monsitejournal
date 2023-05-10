@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.intro {
+  background-image: url("https://picsum.photos/800/600");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.intro h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: #0069d9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+.events {
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+.events h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.events ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.events ul li {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+
+.events ul li:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.events ul li h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.events ul li p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.events ul li p strong {
+  color: #333;
+}
+
+.events ul li a.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.events ul li a.button:hover {
+  background-color: #fff;
+  color: #333;
+}
