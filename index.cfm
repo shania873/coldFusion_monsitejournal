@@ -1,22 +1,3 @@
-<cfscript>
-    // Créez une nouvelle instance de la CFC
-    variables.dbPath = expandPath("./db/");
-
-    this.name = "ColdfusionTraining";
-    this.applicationTimeout = createTimeSpan(0, 2, 0, 0); //2h
-    this.sessionManagement = true;
-    this.sessionTimeout = createTimeSpan(0, 0, 20, 0); //20min
-
-    this.datasources = {
-        CFTrainingDSN = {
-            class = "org.gjt.mm.mysql.Driver",
-            connectionString = "jdbc:mysql://localhost:3306/metisapp",
-            username = "root",
-            password = "Foutaise.1"
-        }
-    };
-</cfscript>
-
 <html>
 	<head>
 	    <meta charset="UTF-8">
@@ -26,7 +7,6 @@
 		
 	</head>
 	<body>
-
   <nav>
     <ul>
       <li><a href="./index.html">Accueil</a></li>
@@ -44,17 +24,12 @@
 	
 	    <h2>Evénements à venir</h2>
 	  	<cfquery datasource="CFTrainingDSN" name="dbtest">
-    		SELECT * FROM User
+    		SELECT * FROM events
 		</cfquery>
 
 		<cfoutput query="dbtest">
-			#username# - #email# - #enabled#<br>
+			#id# - #name_event# - #date_event#<br>
 		</cfoutput>
 	</section>
-
-  
-  
-  
-
 	</body>
 	</html>
