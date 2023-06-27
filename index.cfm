@@ -1,6 +1,12 @@
+<cfset setEncoding("Form", "ISO-8859-1")>
+<!--- Set the output encoding to ISO-8859-1 --->
+<cfcontent type="text/html; charset=ISO-8859-1">
 <html>
 	<head>
-	    <meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<cfset setEncoding("Form", "ISO-8859-1")>
+<!--- Set the output encoding to ISO-8859-1 --->
+<cfcontent type="text/html; charset=ISO-8859-1">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link href="./styles/main.css" rel="stylesheet" type="text/css" media="screen" />
 	    <title>Site Web</title>
@@ -22,13 +28,13 @@
   </section>
 	<section class="events">
 	
-	    <h2>Evénements à venir</h2>
-	  	<cfquery datasource="CFTrainingDSN" name="dbtest">
-    		SELECT * FROM events
+	    <h2>Livres à venir</h2>
+	  	<cfquery datasource="CFTrainingDSN" name="books">
+    		SELECT * FROM books
 		</cfquery>
 
-		<cfoutput query="dbtest">
-			#id# - #name_event# - #date_event#<br>
+		<cfoutput query="books">
+			#id# - #name# - #description#<br>
 		</cfoutput>
 	</section>
 	</body>
